@@ -3,7 +3,7 @@
 This project consists of two microservices that work together to manage API keys and Web3 tokens:
 
 1. **Access Key Service**: Manages API key generation, validation, and access control
-2. **Web3 Token Service**: Handles Web3 token operations and blockchain interactions
+2. **Web3 Token Service**: Handles Web3 token operations
 
 ## Prerequisites
 
@@ -116,19 +116,17 @@ npm run start:prod
 
 ## API Documentation
 
-### Access Key Service (Port 3000)
+### Access Key Service (Port 3001)
 
-- `POST /api/keys`: Generate new API key
-- `GET /api/keys`: List all API keys
-- `DELETE /api/keys/:id`: Revoke API key
-- `POST /api/validate`: Validate API key
+Interactive API documentation is available through Swagger UI:
+- **Swagger UI**: [http://localhost:3001/api#/](http://localhost:3001/api#/)
 
-### Web3 Token Service (Port 3001)
 
-- `POST /api/tokens`: Create new Web3 token
-- `GET /api/tokens`: List all tokens
-- `GET /api/tokens/:id`: Get token details
-- `POST /api/tokens/transfer`: Transfer token
+### Web3 Token Service (Port 3002)
+
+Interactive API documentation is available through Swagger UI:
+- **Swagger UI**: [http://localhost:3002/api#/](http://localhost:3002/api#/)
+
 
 ## Testing
 
