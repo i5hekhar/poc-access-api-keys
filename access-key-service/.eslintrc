@@ -1,0 +1,39 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "browser": false,
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "ecmaVersion": 12,
+    "sourceType": "module",
+  },
+  "plugins": ["prettier", "unused-imports", "@typescript-eslint", "@typescript-eslint/eslint-plugin", "import"],
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "root": true,
+  "ignorePatterns": [".eslintrc"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "all",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+      },
+    ],
+    "curly": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+  },
+}
